@@ -1,0 +1,21 @@
+<div class="product-card">
+  <img  [src]="product.images[product.currentImageIndex]" alt="{{ product.name }}">
+  <div id="divik">
+    <button (click)="prevImage()" class="nav-btn">◀️</button>
+    <button (click)="nextImage()" class="nav-btn">▶️</button>
+  </div>
+  <h3>{{ product.name }}</h3>
+  <p>Рейтинг: {{ product.rating }}⭐</p>
+  <span class="price">{{ product.price }}₸</span>
+
+  <a [href]="product.url" target="_blank">Купить</a>
+
+  <button (click)="likeProduct()">❤️ {{ product.likes }}</button>
+  <button (click)="remove()">🗑️ Удалить</button>
+  <div id="btns">
+    <button id="W-btn" (click)="openWhatsApp()">Whats'Up</button>
+    <button id="T-btn" (click)="openTelegram()">Telegram</button>
+</div>
+
+  
+</div>
