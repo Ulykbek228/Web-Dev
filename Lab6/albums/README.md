@@ -28,7 +28,7 @@ ng generate --help
 
 ## Building
 
-To build the project run:
+To build the project ru:
 
 ```bash
 ng build
