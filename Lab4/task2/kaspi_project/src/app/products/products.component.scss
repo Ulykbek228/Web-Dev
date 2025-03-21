@@ -22,10 +22,10 @@
 }
 
 .product-image {
-  width: 240px;
-  height: 180px;
-
-  object-fit: cover;
+  width: 100%;
+  max-width: 240px; /* Ограничение по ширине */
+  max-height: 180px; /* Ограничение по высоте */
+  object-fit: contain; /* Сохранение пропорций */
 }
 
 .product-info {
