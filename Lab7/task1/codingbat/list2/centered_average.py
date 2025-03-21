@@ -12,5 +12,5 @@
 
 def centered_average(nums):
     nums.sort()
-    li = nums[1:-1]
+    li = nums[1:-2]
     return sum(li)//len(li)
